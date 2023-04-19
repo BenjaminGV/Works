@@ -1,0 +1,43 @@
+h1{
+    color:white;
+    text-align:center;
+}
+*{
+    
+    background-color: #25274D;
+}
+.style
+{
+    border:5px solid white
+}
+#one
+{
+    color:white;
+}
+#two
+{
+    color:white;
+}
+#three
+{
+    color:white;
+}
+#four
+{
+    color:white;
+}
+iframe.bunny
+{
+    border-right:2px double yellow;border-left:2px double red;border-top:2px double blue;border-bottom:2px double green;
+}
+div,h1
+{
+    font-size:40px;
+}
+.bruno
+{
+    background-color:black;
+}
+ul,li{
+    color:white;
+}

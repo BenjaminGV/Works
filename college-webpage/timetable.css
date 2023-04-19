@@ -1,0 +1,105 @@
+.logo{
+    height: auto;
+    width: auto;
+    float: left;
+}
+table.one{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-collapse: collapse;
+
+
+}
+table.one tr{
+    border-bottom: white;
+    border-top: white;
+}
+table.one td{
+    padding: 14px;
+}
+table.two{
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 80px;
+    position: absolute;
+    margin-top: 150px;
+
+
+}
+table.two tr{
+    border-bottom: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table.two th{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 14px;
+    
+}
+
+table.two td{
+    text-align: center;
+    padding: 14px;
+
+
+}
+table.three{
+    border-collapse: collapse;
+    width: 80%;
+    border-spacing: 80px;
+    position:absolute;
+    margin-top: 520px;
+    margin-left: 115px;
+}
+table.three tr{
+    border-bottom: 1px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table.three th{
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    padding: 14px;
+    
+}
+
+table.three td{
+    text-align:left;
+    padding: 14px;
+
+
+}
+#cn:hover
+{
+ background-color: aqua;
+}
+#ai:hover
+{
+    background-color: #51a804;
+}
+#toc:hover
+{
+    background-color: blue;
+}
+#ip:hover
+{
+    background-color: #920505;
+}
+#scm:hover{
+    background-color: #cecb0b;
+}
+#ss:hover
+{
+    background-color: #af3c3c;
+}
+#dm:hover
+{
+    background-color: rgb(16, 25, 32);
+}
+[href]
+{
+    color:red;
+}
