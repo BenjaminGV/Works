@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+    <title>Blood Bank-Forum</title>
+
+    <link rel="stylesheet" href="signstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function()
+            {
+              let x = document.forms["form"]["option1"].value;
+              let y = document.forms["form"]["option3"].value;
+              if (x == "") {
+              alert("Nam");
+              return false;
+              }
+
+           function validate() {
+        if (document.getElementById('op2').checked||document.getElementById('opt4').checked||document.getElementById('opt5').checked
+        ||document.getElementById('opt7').checked) 
+            {
+                alert("checked");
+        }
+    }
+        });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="background-color: rgb(144, 126, 194);">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <h1 style="background-color: aliceblue;color:red;text-align: center;">Blood Bank-Forum</h1>
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+     
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="bc1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="bc2.png" alt="Chicago" class="d-block" style="width:100%">
+        </div>
+        <div class="carousel-item">
+          <img src="bc3.jpg" alt="New York" class="d-block" style="width:100%">
+        </div>
+      </div>
+      
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    <form  method="post" action="connect2.php" name="form">
+        <label for="name" id="ne">FIRST NAME:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="Lname" id="le">LAST NAME:</label>
+        <input type="text" id="Lname" name="Lname" required>
+        <br>
+        <br>
+        <br>
+        <label for="email" id="el">EMAIL:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        
+        <br>
+        <br>
+        <p id="para1">BLOOD GROUP:</p>
+        <span id="change">
+        <label for="option 1" id="m">A+</label>
+        <input type="radio" value="A+" id="opt 1"name="group">
+        <br>
+        <label for="option 2" id="f">A-</label>
+        <input type="radio" value="A-" id="opt 2"name="group">
+        <br>
+        <label for="option 3" id="o">B+</label>
+        <input type="radio" value="B+" id="opt 3" name="group">
+        <br>
+        <label for="option 4" id="w">B-</label>
+        <input type="radio" value="B-" id="opt 4" name="group">
+        <br>
+        <label for="option 5" id="x">O+</label>
+        <input type="radio" value="O+" id="opt 5" name="group">
+        <br>
+        <label for="option 6" id="y">O-</label>
+        <input type="radio" value="O-" id="opt 6" name="group">
+        <br>
+        <label for="option 7" id="z">AB+</label>
+        <input type="radio" value="O-" id="opt 7" name="group">
+        <br>
+        <label for="option 8" id="t">AB-</label>
+        <input type="radio" value="O-" id="opt 8" name="group">
+        </span>
+        <p id="para2">To which age grp you belong?</p>
+        <span id="change2">
+        <label for="option 1">below 18 </label>
+        <input type="radio" value="below 18" id="option 1"name="age">
+        <br>
+        <label for="option 2">btw18-65</label>
+        <input type="radio" value="18-65" id="option 2"name="age">
+        <br>
+        <label for="option 3">above 65</label>
+        <input type="radio" value="above 65" id="option 3" name="age">
+        </span>
+        <br>
+        <p id="para3">Do you partake in any of these activities?</p>
+        <span id="change2">
+        <label for="smoking">smoking</label>
+        <input type="checkbox" id="smoking" name="smoking" value="smoking">
+        <label for="drinking">drinking</label>
+        <input type="checkbox" id="drinking" name="drinking" value="drinking">
+        <label for="tattoo">tattooing</label>
+        <input type="checkbox" id="tattoo" name="tattoo" value="tattoo">
+        <br>
+        <br>
+        </span>
+        <label for="phno" id="label">phone number:</label>
+        <input type="tel" id="phno" name="phno" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" recquired>
+        <br>
+        <br>
+    </span>
+    <label for="option" id="change04" style="position: relative;left:400px;">weight:</label>
+    <input type="number" id="option" name="option" recquired style="position: relative;left:485px;">
+<br>
+<br>
+<input type="submit" value="submit the form" id="submit">
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MANGA</title>
+        <link rel="stylesheet" href="manga.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#deathnote").mouseenter(function(){
+                    location.href="https://deathnote.fandom.com/wiki/Death_Note_13:_How_to_Read";
+                });
+                $("#naruto").mouseenter(function(){
+                    location.href="https://mangaplus.shueisha.co.jp/titles/100018";
+                });
+                $("#sasuke").mouseenter(function(){
+                    location.href="https://www.viz.com/shonenjump/chapters/naruto-sasukes-story-the-uchiha-and-the-heavenly-stardust-manga?locale=en";
+                });
+                $("#aot").mouseenter(function(){
+                    location.href="https://read-attackontitan-manga.com/";
+                });
+            });
+            </script>
+    </head>
+    <body>
+        <iframe width="350" height="1000px" id="deathnote"></iframe>
+            <iframe width="350" height="1000px" id="naruto"></iframe>
+                <iframe width="350" height="1000px" id="sasuke"></iframe>
+                    <iframe width="350" height="1000px" id="aot"></iframe>
+    </body>
+</html>

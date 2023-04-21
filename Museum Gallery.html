@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head style="background-color:violet;">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+               $("#dp").hide();
+               $("#bw").hide();
+               $("#cm").hide();
+               $("#cap").hide();
+               $("#hulk").on({
+               mouseenter: function(){
+              $("#cap").slideDown("slow");
+              $("#cm").slideDown("slow");
+               },
+               mouseleave: function()
+               {
+                $("#cap").slideUp("slow");
+                $("#cm").slideUp("slow");
+               },
+            });
+                $("#thor").on({
+               mouseenter: function(){
+              $("#dp").slideDown("slow");
+              $("#bw").slideDown("slow");
+               },
+               mouseleave: function()
+               {
+                $("#dp").slideUp("slow");
+                $("#bw").slideUp("slow");
+               }
+            }); 
+        });    
+        </script>
+        <title>Comic Book Store</title>
+        <link rel="stylesheet" href="styling.css">
+        <div class = "nav_menu">
+            <h1 style="color:rgb(218, 6, 6);">THE COMIC BOOK STORE</h1>
+            <a href = "festivals.html">FESTIVALS</a>
+            <a href = "index.html">CALENDAR</a>
+            <a href = "manga.html">MANGA</a>
+        </div>
+    </head>
+    <body style="background-color:violet;">
+        <section class="here">
+        <div id="for">
+            <form action="connect.php" method="post">
+                <label for="ben" class="two">username:</label>
+                <br>
+                <input type="text" id="ben" name="username" placeholder="username" required class="three">
+                <br>
+                <label for="geo" class="four">password:</label>
+                <br>
+                <input type="password" id="heo" name="password" placeholder="enter password" required class="five">
+                <br>
+                <br>
+                <input type="submit" value="login" class="six" id="six" >
+    
+            </form>
+            <p>new to the Arena mate?</p>
+            <a href="Signin.html" id="black">Sign-in</a>
+            <a href="adminlogin.html" id="black">Login as Admin</a>
+        </div>
+        <div id="hulk"></div>
+        <div id="thor"></div>
+        <div id="bw"></div>
+    <div id="cap"></div>
+    <div id="dp"></div>
+    <div id="cm"></div>
+
+    </section>
+
+       <br>
+       <br>
+       <br>  
+    <br>
+    <br>
+        <br>
+        <br>
+        <a href="About us.html" target="_blank" id="white">About us</a>
+        <blockquote cite="www.google.com">
+            <strong>**This is an official virtual platform of THE COMIC BOOK STORE to know more about further details click on the options we dont have any copyrights issue in particular to be mentioned**
+            
+            </strong>
+        </blockquote>
+    </body>
+</html>
