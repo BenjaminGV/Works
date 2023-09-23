@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="stylesheet" href="/video.css">
+  </head>
+  <body>
+    <div class="youtube-container">
+    
+    
+          <script>
+              function renderPlaylistVideos(playlistId, apiKey, pageToken) {
+              // Set up the API endpoint
+              let apiUrl = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet%2CcontentDetails&maxResults=50&playlistId=${playlistId}&key=${apiKey}`;
+
+              // If there's a page token, add it to the API URL
+              if (pageToken) {
+                apiUrl += `&pageToken=${pageToken}`;
+              }
+
+              // Fetch the playlist data from the API
+              fetch(apiUrl)
+                .then((result) => result.json())
+                .then((data) => {
+                  // Render the videos on the page
+                  let videos = data.items;
+                  var videoContainer = document.querySelector(".youtube-container");
+                  for (let video of videos) {
+                    videoContainer.innerHTML += `
+                      
+                        <iframe class="video-player"  src="https://www.youtube.com/embed/${video.contentDetails.videoId}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      `;
+                  }
+
+                  // If there's a next page token, fetch the next page of results
+                  if (data.nextPageToken) {
+                    renderPlaylistVideos(playlistId, apiKey, data.nextPageToken);
+                  }
+                })
+                .catch((error) => console.error(error));
+            }
+
+            // Call the function with the playlist ID and API key
+            renderPlaylistVideos("PL1eHzHCwTqX4baf6EunOb2QRF4BuliE_g", "AIzaSyD-Pa2zdeWCZLn6vRLyibxNX3I1x8pHA5Q");
+          </script>
+       </div>
+  </body>
+</html>
+
+
+
+
